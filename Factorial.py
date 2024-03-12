@@ -1,14 +1,24 @@
+# Python program to find the factorial of a number provided by the user
+# using recursion
 
-name = ""
-number = ""
+def factorial(x):
+    """This is a recursive function
+    to find the factorial of an integer"""
 
-print("Welcome to the factorial program.")
+    if x == 1:
+        return 1
+    else:
+        # recursive call to the function
+        return (x * factorial(x-1))
 
-while name == "":
-    input(str("Please enter your name"))
 
-while number == "":
-    input(str("Please enter a number to get the factorial value"))
-    
-for i in number:
-    print(number) 
+
+
+#To take input from the user
+num = int(input("Enter a number: "))
+
+# call the factorial function
+result = factorial(num)
+print("The factorial of", num, "is", result)
+
+
