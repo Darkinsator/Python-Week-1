@@ -18,5 +18,11 @@ class Canvas:
     def clear(self):
         os.system('cls' if os.name == 'nt' else 'clear')
 
-    def print(self)    
-            
+    def print(self):
+        self.clear()
+        for y in range(self._y):
+            print(' ',join([col[y] for col in self._canvas]))
+
+class TerminalScribe:
+    def _init_(self, canvas):
+        self.canvas = canvas            
