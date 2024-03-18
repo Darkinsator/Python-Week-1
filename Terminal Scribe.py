@@ -1,5 +1,7 @@
 import os
 import time
+from os.path import join
+
 from termcolor import colored
 
 
