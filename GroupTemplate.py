@@ -1,4 +1,7 @@
 #functions
+courses = ['Maths', 'Physics', 'English', 'CompScie']
+courses.insert(0, 'Art')
+print(courses)
 
 int1 = int(input("Enter number 1 :"))
 int2 = int(input("Enter number 2 :"))
