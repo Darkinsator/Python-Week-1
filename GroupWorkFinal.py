@@ -14,7 +14,7 @@ topic = input("What topic are you focusing on :")
 
 membersMarks = [] #DATA STRUCTURES
 for x in range(0, 5):
-  individualMark = input("Enter mark for member number " + str(x + 1) + ".")
+  individualMark = input("Enter mark for member number " + str(x + 1) + ": ")
   membersMarks.append(individualMark)
 
 print(".........................................")
@@ -33,7 +33,7 @@ def response(mark): #FUNCTIONS
     print("Your mark garbage get good. ")
 
 print("Welcome " + groupDetails.group + " you are in week " + str(groupDetails.week) + " and learning " + groupDetails.topic +".")
-print("You scored a code " + str(groupDetails.mark) + " on your presentation.")
+print("You guys scored a code " + str(groupDetails.mark) + " on your presentation.")
 response(groupDetails.mark)
 print(".........................................")
 print("Individual Marks")
